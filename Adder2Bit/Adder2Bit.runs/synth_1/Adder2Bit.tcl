@@ -56,8 +56,11 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 7
 set_param general.usePosixSpawnForFork 1
+set_param synth.incrementalSynthesisCache C:/Xilinx/2025.1/Vivado/bin/.Xil/Vivado-19600-S-1B4L644/incrSyn
+set_param checkpoint.writeSynthRtdsInDcp 1
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
