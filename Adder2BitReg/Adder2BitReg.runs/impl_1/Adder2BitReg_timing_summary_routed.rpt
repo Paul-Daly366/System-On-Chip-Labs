@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-| Date         : Wed Sep 30 16:28:43 2026
+| Date         : Wed Oct  7 15:52:10 2026
 | Host         : S-1B4L644 running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -routable_nets -report_unconstrained -file Adder2BitReg_timing_summary_routed.rpt -pb Adder2BitReg_timing_summary_routed.pb -rpx Adder2BitReg_timing_summary_routed.rpx -warn_on_violation
 | Design       : Adder2BitReg
@@ -415,7 +415,7 @@ Min Delay             4 Endpoints
 Max Delay Paths
 --------------------------------------------------------------------------------------
 Slack:                    inf
-  Source:                 rst
+  Source:                 rst_n
                             (input port)
   Destination:            c_reg_reg/CLR
                             (recovery check against rising-edge clock sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
@@ -435,10 +435,10 @@ Slack:                    inf
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    U18                                               0.000     0.000 r  rst (IN)
-                         net (fo=0)                   0.000     0.000    rst
-    U18                  IBUF (Prop_ibuf_I_O)         1.441     1.441 r  rst_IBUF_inst/O
-                         net (fo=1, routed)           0.855     2.296    rst_IBUF
+    U18                                               0.000     0.000 r  rst_n (IN)
+                         net (fo=0)                   0.000     0.000    rst_n
+    U18                  IBUF (Prop_ibuf_I_O)         1.441     1.441 r  rst_n_IBUF_inst/O
+                         net (fo=1, routed)           0.855     2.296    rst_n_IBUF
     SLICE_X0Y12          LUT1 (Prop_lut1_I0_O)        0.124     2.420 f  s_reg_i_2/O
                          net (fo=2, routed)           0.670     3.090    s_reg_i_2_n_0
     SLICE_X0Y12          FDCE                                         f  c_reg_reg/CLR
@@ -455,7 +455,7 @@ Slack:                    inf
     SLICE_X0Y12          FDCE                                         r  c_reg_reg/C
 
 Slack:                    inf
-  Source:                 rst
+  Source:                 rst_n
                             (input port)
   Destination:            s_reg_reg/CLR
                             (recovery check against rising-edge clock sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
@@ -475,10 +475,10 @@ Slack:                    inf
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    U18                                               0.000     0.000 r  rst (IN)
-                         net (fo=0)                   0.000     0.000    rst
-    U18                  IBUF (Prop_ibuf_I_O)         1.441     1.441 r  rst_IBUF_inst/O
-                         net (fo=1, routed)           0.855     2.296    rst_IBUF
+    U18                                               0.000     0.000 r  rst_n (IN)
+                         net (fo=0)                   0.000     0.000    rst_n
+    U18                  IBUF (Prop_ibuf_I_O)         1.441     1.441 r  rst_n_IBUF_inst/O
+                         net (fo=1, routed)           0.855     2.296    rst_n_IBUF
     SLICE_X0Y12          LUT1 (Prop_lut1_I0_O)        0.124     2.420 f  s_reg_i_2/O
                          net (fo=2, routed)           0.670     3.090    s_reg_i_2_n_0
     SLICE_X0Y12          FDCE                                         f  s_reg_reg/CLR
@@ -651,7 +651,7 @@ Slack:                    inf
     SLICE_X0Y12          FDCE                                         r  s_reg_reg/C
 
 Slack:                    inf
-  Source:                 rst
+  Source:                 rst_n
                             (input port)
   Destination:            c_reg_reg/CLR
                             (removal check against rising-edge clock sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
@@ -666,10 +666,10 @@ Slack:                    inf
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    U18                                               0.000     0.000 r  rst (IN)
-                         net (fo=0)                   0.000     0.000    rst
-    U18                  IBUF (Prop_ibuf_I_O)         0.210     0.210 r  rst_IBUF_inst/O
-                         net (fo=1, routed)           0.341     0.550    rst_IBUF
+    U18                                               0.000     0.000 r  rst_n (IN)
+                         net (fo=0)                   0.000     0.000    rst_n
+    U18                  IBUF (Prop_ibuf_I_O)         0.210     0.210 r  rst_n_IBUF_inst/O
+                         net (fo=1, routed)           0.341     0.550    rst_n_IBUF
     SLICE_X0Y12          LUT1 (Prop_lut1_I0_O)        0.045     0.595 f  s_reg_i_2/O
                          net (fo=2, routed)           0.336     0.931    s_reg_i_2_n_0
     SLICE_X0Y12          FDCE                                         f  c_reg_reg/CLR
@@ -686,7 +686,7 @@ Slack:                    inf
     SLICE_X0Y12          FDCE                                         r  c_reg_reg/C
 
 Slack:                    inf
-  Source:                 rst
+  Source:                 rst_n
                             (input port)
   Destination:            s_reg_reg/CLR
                             (removal check against rising-edge clock sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
@@ -701,10 +701,10 @@ Slack:                    inf
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    U18                                               0.000     0.000 r  rst (IN)
-                         net (fo=0)                   0.000     0.000    rst
-    U18                  IBUF (Prop_ibuf_I_O)         0.210     0.210 r  rst_IBUF_inst/O
-                         net (fo=1, routed)           0.341     0.550    rst_IBUF
+    U18                                               0.000     0.000 r  rst_n (IN)
+                         net (fo=0)                   0.000     0.000    rst_n
+    U18                  IBUF (Prop_ibuf_I_O)         0.210     0.210 r  rst_n_IBUF_inst/O
+                         net (fo=1, routed)           0.341     0.550    rst_n_IBUF
     SLICE_X0Y12          LUT1 (Prop_lut1_I0_O)        0.045     0.595 f  s_reg_i_2/O
                          net (fo=2, routed)           0.336     0.931    s_reg_i_2_n_0
     SLICE_X0Y12          FDCE                                         f  s_reg_reg/CLR

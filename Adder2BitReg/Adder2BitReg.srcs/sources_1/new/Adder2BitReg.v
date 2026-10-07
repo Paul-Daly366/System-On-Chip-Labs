@@ -14,7 +14,7 @@ module Adder2BitReg(
     input a,
     input b,
     input clk,
-    input rst,
+    input rst_n,
     output s,
     output c
     );
@@ -25,8 +25,8 @@ wire s_next, c_next;
 assign s_next = a ^ b;
 assign c_next = a & b; 
 
-always @(posedge clk, negedge rst) begin
-    if(!rst) begin
+always @(posedge clk or negedge rst_n) begin
+    if(!rst_n) begin
         s_reg <= 1'b0;
         c_reg <= 1'b0;
     end

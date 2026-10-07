@@ -5,11 +5,14 @@
 module Testbench;
     
   reg a, b;
-  reg clk, rst;
+  reg clk, rst_n;
   wire s, c; 
   localparam T = 10;
   
-  Adder2BitReg uut(a, b, clk, rst, s, c);
+  // Instantiate an object from the class Adder2BitReg, uut = unit under test, in this case it's the name of the object we're making
+  // Class name(Parameters);
+  Adder2BitReg uut(
+  .a(a), .b(b), .clk(clk), .rst_n(rst_n), .s(s), .c(c));
    
   // Clock
   always
@@ -20,18 +23,14 @@ module Testbench;
     #(T/2);
   end
   
-  // Reset
+  // Reset (?)
   initial
   begin
-    rst = 1'b1;
+    rst_n = 1'b0;
     repeat (2) begin
         @(negedge clk);
     end
-    rst = 1'b0;
-    repeat (10) begin
-        @(negedge clk);
-    end
-    rst = 1'b1;
+    rst_n = 1'b1;
   end
   
   // Data
@@ -40,7 +39,7 @@ module Testbench;
   $display("\n 2 Bit Adder with Registers Test\n");
   a = 1'b0; 
   b = 1'b0;
-  @(posedge rst);
+  @(posedge rst_n);
   @(negedge clk);
   a = 1'b0;
   b = 1'b1;
@@ -50,7 +49,7 @@ module Testbench;
   @(negedge clk);
   a = 1'b1;
   b = 1'b1;
-  @(negedge rst);
+  @(negedge rst_n);
   @(negedge clk);
   a = 1'b0; 
   b = 1'b0;

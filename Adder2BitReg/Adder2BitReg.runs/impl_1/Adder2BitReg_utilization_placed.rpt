@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-| Date         : Wed Sep 30 16:28:29 2026
+| Date         : Wed Oct  7 15:51:56 2026
 | Host         : S-1B4L644 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file Adder2BitReg_utilization_placed.rpt -pb Adder2BitReg_utilization_placed.pb
 | Design       : Adder2BitReg

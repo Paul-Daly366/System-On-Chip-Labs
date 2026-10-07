@@ -109,7 +109,9 @@ set rc [catch {
   create_msg_db write_bitstream.pb
   set_param chipscope.maxJobs 7
   set_param general.usePosixSpawnForFork 1
+  set_param synth.incrementalSynthesisCache C:/Xilinx/2025.1/Vivado/bin/.Xil/Vivado-32224-S-1B4L644/incrSyn
   set_param checkpoint.writeSynthRtdsInDcp 1
+  set_param xicom.use_bs_reader 1
   set_param runs.launchOptions { -jobs 14  }
   open_checkpoint Adder2BitReg_routed.dcp
   set_property webtalk.parent_dir {C:/ATU/VS files/PD/Adder2BitReg/Adder2BitReg.cache/wt} [current_project]

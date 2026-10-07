@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-| Date         : Wed Sep 30 16:28:42 2026
+| Date         : Wed Oct  7 15:52:10 2026
 | Host         : S-1B4L644 running 64-bit major release  (build 9200)
 | Command      : report_drc -file Adder2BitReg_drc_routed.rpt -pb Adder2BitReg_drc_routed.pb -rpx Adder2BitReg_drc_routed.rpx
 | Design       : Adder2BitReg
