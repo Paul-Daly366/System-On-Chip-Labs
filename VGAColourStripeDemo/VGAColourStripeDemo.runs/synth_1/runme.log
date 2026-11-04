@@ -1,0 +1,247 @@
+
+*** Running vivado
+    with args -log VGATop.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source VGATop.tcl
+
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Wed Oct 21 15:00:46 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source VGATop.tcl -notrace
+Command: synth_design -top VGATop -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 23448
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1189.176 ; gain = 493.570
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'VGATop' [C:/ATU/VS files/PD/VGAColourStripeDemo/VGAColourStripeDemo.srcs/sources_1/imports/Downloads/VGATop.v:7]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/ATU/VS files/PD/VGAColourStripeDemo/VGAColourStripeDemo.runs/synth_1/.Xil/Vivado-19332-S-1B4L644/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [C:/ATU/VS files/PD/VGAColourStripeDemo/VGAColourStripeDemo.runs/synth_1/.Xil/Vivado-19332-S-1B4L644/realtime/clk_wiz_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'locked' of module 'clk_wiz_0' is unconnected for instance 'u_clock' [C:/ATU/VS files/PD/VGAColourStripeDemo/VGAColourStripeDemo.srcs/sources_1/imports/Downloads/VGATop.v:17]
+WARNING: [Synth 8-7023] instance 'u_clock' of module 'clk_wiz_0' has 4 connections declared, but only 3 given [C:/ATU/VS files/PD/VGAColourStripeDemo/VGAColourStripeDemo.srcs/sources_1/imports/Downloads/VGATop.v:17]
+INFO: [Synth 8-6157] synthesizing module 'VGASync' [C:/ATU/VS files/PD/VGAColourStripeDemo/VGAColourStripeDemo.srcs/sources_1/imports/Downloads/VGASync.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'VGASync' (0#1) [C:/ATU/VS files/PD/VGAColourStripeDemo/VGAColourStripeDemo.srcs/sources_1/imports/Downloads/VGASync.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ColourStripes' [C:/ATU/VS files/PD/VGAColourStripeDemo/VGAColourStripeDemo.srcs/sources_1/imports/Downloads/VGAColourStripes.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'ColourStripes' (0#1) [C:/ATU/VS files/PD/VGAColourStripeDemo/VGAColourStripeDemo.srcs/sources_1/imports/Downloads/VGAColourStripes.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'VGATop' (0#1) [C:/ATU/VS files/PD/VGAColourStripeDemo/VGAColourStripeDemo.srcs/sources_1/imports/Downloads/VGATop.v:7]
+WARNING: [Synth 8-7129] Port row[10] in module ColourStripes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port row[9] in module ColourStripes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port row[8] in module ColourStripes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port row[7] in module ColourStripes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port row[6] in module ColourStripes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port row[5] in module ColourStripes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port row[4] in module ColourStripes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port row[3] in module ColourStripes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port row[2] in module ColourStripes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port row[1] in module ColourStripes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port row[0] in module ColourStripes is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module VGASync is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1297.195 ; gain = 601.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1297.195 ; gain = 601.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1297.195 ; gain = 601.590
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1297.195 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/ATU/VS files/PD/VGAColourStripeDemo/VGAColourStripeDemo.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'u_clock'
+Finished Parsing XDC File [c:/ATU/VS files/PD/VGAColourStripeDemo/VGAColourStripeDemo.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'u_clock'
+Parsing XDC File [C:/ATU/VS files/PD/VGAColourStripeDemo/VGAColourStripeDemo.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/ATU/VS files/PD/VGAColourStripeDemo/VGAColourStripeDemo.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/ATU/VS files/PD/VGAColourStripeDemo/VGAColourStripeDemo.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/VGATop_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/VGATop_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1375.125 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1375.125 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1375.125 ; gain = 679.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1375.125 ; gain = 679.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1375.125 ; gain = 679.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1375.125 ; gain = 679.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   5 Input    4 Bit        Muxes := 1     
+	   7 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1376.113 ; gain = 680.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1522.016 ; gain = 826.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1551.629 ; gain = 856.023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1551.629 ; gain = 856.023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1767.340 ; gain = 1071.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1767.340 ; gain = 1071.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1767.340 ; gain = 1071.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1767.340 ; gain = 1071.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1767.340 ; gain = 1071.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1767.340 ; gain = 1071.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |clk_wiz |     1|
+|2     |LUT1    |     2|
+|3     |LUT2    |     6|
+|4     |LUT3    |     7|
+|5     |LUT4    |     9|
+|6     |LUT5    |     7|
+|7     |LUT6    |    10|
+|8     |FDCE    |     3|
+|9     |FDRE    |    23|
+|10    |IBUF    |     1|
+|11    |OBUF    |    14|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1767.340 ; gain = 1071.734
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1767.340 ; gain = 993.805
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1767.340 ; gain = 1071.734
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1773.973 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1777.512 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 8ccb4e4b
+INFO: [Common 17-83] Releasing license: Synthesis
+21 Infos, 15 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.statsThreshold
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1777.512 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/ATU/VS files/PD/VGAColourStripeDemo/VGAColourStripeDemo.runs/synth_1/VGATop.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file VGATop_utilization_synth.rpt -pb VGATop_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 21 15:01:14 2026...
