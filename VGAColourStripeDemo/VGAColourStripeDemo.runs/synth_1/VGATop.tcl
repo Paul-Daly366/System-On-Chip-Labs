@@ -56,10 +56,11 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param tcl.statsThreshold 360
+set_param chipscope.maxJobs 7
 set_param general.usePosixSpawnForFork 1
-set_param synth.incrementalSynthesisCache C:/Xilinx/2025.1/Vivado/bin/.Xil/Vivado-20992-S-1B4L644/incrSyn
+set_param synth.incrementalSynthesisCache C:/Xilinx/2025.1/Vivado/bin/.Xil/Vivado-41736-S-1B4L644/incrSyn
 set_param checkpoint.writeSynthRtdsInDcp 1
+set_param xicom.use_bs_reader 1
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
@@ -83,7 +84,7 @@ read_verilog -library xil_defaultlib {
   {C:/ATU/VS files/PD/VGAColourStripeDemo/VGAColourStripeDemo.srcs/sources_1/imports/Downloads/VGASync.v}
   {C:/ATU/VS files/PD/VGAColourStripeDemo/VGAColourStripeDemo.srcs/sources_1/imports/Downloads/VGATop.v}
 }
-read_ip -quiet {{c:/ATU/VS files/PD/VGAColourStripeDemo/VGAColourStripeDemo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}
+read_ip -quiet {{C:/ATU/VS files/PD/VGAColourStripeDemo/VGAColourStripeDemo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}
 set_property used_in_implementation false [get_files -all {{c:/ATU/VS files/PD/VGAColourStripeDemo/VGAColourStripeDemo.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc}}]
 set_property used_in_implementation false [get_files -all {{c:/ATU/VS files/PD/VGAColourStripeDemo/VGAColourStripeDemo.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc}}]
 set_property used_in_implementation false [get_files -all {{c:/ATU/VS files/PD/VGAColourStripeDemo/VGAColourStripeDemo.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc}}]
@@ -101,6 +102,8 @@ read_xdc {{C:/ATU/VS files/PD/VGAColourStripeDemo/VGAColourStripeDemo.srcs/const
 set_property used_in_implementation false [get_files {{C:/ATU/VS files/PD/VGAColourStripeDemo/VGAColourStripeDemo.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental {C:/ATU/VS files/PD/VGAColourStripeDemo/VGAColourStripeDemo.srcs/utils_1/imports/synth_1/VGATop.dcp}
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

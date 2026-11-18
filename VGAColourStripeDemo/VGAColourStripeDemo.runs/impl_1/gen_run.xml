@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1792591280">
-  <File Type="ROUTE-BLACKBOX-DCP" Name="VGATop_routed_bb.dcp"/>
-  <File Type="OPT-UTIL" Name="VGATop_utilization_opted.rpt"/>
-  <File Type="ROUTE-PWR" Name="VGATop_power_routed.rpt"/>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1795023288">
   <File Type="PA-TCL" Name="VGATop.tcl"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="VGATop_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="VGATop_timing_summary_init.rpt"/>
-  <File Type="ROUTE-PWR-SUM" Name="VGATop_power_summary_routed.pb"/>
-  <File Type="OPT-RQA-PB" Name="VGATop_rqa_opted.pb"/>
   <File Type="REPORTS-TCL" Name="VGATop_reports.tcl"/>
-  <File Type="ROUTE-TIMING-PB" Name="VGATop_timing_summary_routed.pb"/>
-  <File Type="OPT-UTIL-PB" Name="VGATop_utilization_opted.pb"/>
+  <File Type="INIT-TIMING" Name="VGATop_timing_summary_init.rpt"/>
   <File Type="OPT-DCP" Name="VGATop_opt.dcp"/>
   <File Type="OPT-DRC" Name="VGATop_drc_opted.rpt"/>
+  <File Type="OPT-UTIL" Name="VGATop_utilization_opted.rpt"/>
+  <File Type="OPT-UTIL-PB" Name="VGATop_utilization_opted.pb"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="VGATop_methodology_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="VGATop.hwdef"/>
   <File Type="OPT-TIMING" Name="VGATop_timing_summary_opted.rpt"/>
+  <File Type="OPT-RQA-PB" Name="VGATop_rqa_opted.pb"/>
   <File Type="PWROPT-DCP" Name="VGATop_pwropt.dcp"/>
   <File Type="PWROPT-DRC" Name="VGATop_drc_pwropted.rpt"/>
   <File Type="PWROPT-TIMING" Name="VGATop_timing_summary_pwropted.rpt"/>
@@ -26,19 +22,17 @@
   <File Type="PLACE-CTRL" Name="VGATop_control_sets_placed.rpt"/>
   <File Type="PLACE-SIMILARITY" Name="VGATop_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="VGATop_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BIN" Name="VGATop.bin"/>
   <File Type="PLACE-TIMING" Name="VGATop_timing_summary_placed.rpt"/>
-  <File Type="ROUTE-PWR-RPX" Name="VGATop_power_routed.rpx"/>
   <File Type="PLACE-RQA-PB" Name="VGATop_rqa_placed.pb"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="VGATop_postplace_pwropt.dcp"/>
   <File Type="POSTPLACE-PWROPT-TIMING" Name="VGATop_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="VGATop_physopt.dcp"/>
   <File Type="PHYSOPT-DRC" Name="VGATop_drc_physopted.rpt"/>
   <File Type="PHYSOPT-TIMING" Name="VGATop_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-UTIL" Name="VGATop_utilization_routed.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="VGATop_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="VGATop_routed.dcp"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="VGATop_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="VGATop_routed_bb.dcp"/>
+  <File Type="ROUTE-UTIL" Name="VGATop_utilization_routed.rpt"/>
   <File Type="ROUTE-UTIL-PB" Name="VGATop_utilization_routed.pb"/>
   <File Type="ROUTE-DRC" Name="VGATop_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="VGATop_drc_routed.pb"/>
@@ -46,24 +40,30 @@
   <File Type="ROUTE-METHODOLOGY-DRC" Name="VGATop_methodology_drc_routed.rpt"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="VGATop_methodology_drc_routed.rpx"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="VGATop_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-RQS-PB" Name="VGATop_rqs_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="VGATop_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="VGATop_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="VGATop_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="VGATop_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="VGATop_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="VGATop_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="VGATop_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="VGATop_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="VGATop_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="VGATop_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="VGATop_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="VGATop_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="VGATop_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-RQS-PB" Name="VGATop_rqs_routed.pb"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="VGATop_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="VGATop_postroute_physopt_bb.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING" Name="VGATop_timing_summary_postroute_physopted.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="VGATop_timing_summary_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="VGATop_timing_summary_postroute_physopted.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="VGATop_bus_skew_postroute_physopted.rpt"/>
-  <File Type="BG-BIT" Name="VGATop.bit"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="VGATop_bus_skew_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="VGATop_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="VGATop.bit"/>
+  <File Type="BG-BIN" Name="VGATop.bin"/>
   <File Type="BITSTR-MSK" Name="VGATop.msk"/>
   <File Type="BITSTR-RBT" Name="VGATop.rbt"/>
   <File Type="BITSTR-NKY" Name="VGATop.nky"/>
@@ -162,14 +162,20 @@
   </FileSet>
   <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
     <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/VGATop.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
