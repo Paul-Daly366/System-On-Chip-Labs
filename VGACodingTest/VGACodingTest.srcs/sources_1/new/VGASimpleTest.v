@@ -2,48 +2,77 @@
 //////////////////////////////////////////////////////////////////////////////////
 //
 // Author: Paul Daly
-// Simple Code to display a single colour
+// Testing VGA stuff
 // 
-// ??? Wrong I think: This module serves as a function, when called, this code is ran once through and back to VGATop
-// ??? This is a file that dictates how hardware runnign from a clock is configured, so thinking of it in terms of regular code may not be accurate
 //
 //////////////////////////////////////////////////////////////////////////////////
 
- // ??? What do these parameters do? Figure that out so you can explain it (likely clock things or 'constants' for VGA driving)
 module VGASimpleTest #(
     parameter COUNTER_WIDTH = 32, 
     parameter COUNT_FROM = 0,
-    parameter COUNT_TO = 32'b1 << 26,
-    parameter COUNT_RESET = 32'b1 << 27)
+    parameter COUNT_TO = 32'b1 << 22,
+    parameter COUNT_RESET = 32'b1 << 27,
+    parameter XY_ONE_START = 11'd5,
+    parameter XY_TWO_START = 11'd15,
+    parameter HDISP = 640,
+    parameter VDISP = 480
+    )
     (input clk, rst,
      input [10:0] row, col, 
      output [3:0] red, green, blue);
 
-reg [3:0] red_reg, green_reg, blue_reg, red_next, green_next, blue_next, background;
+reg [3:0] red_reg, green_reg, blue_reg, red_next, green_next, blue_next;
+reg [COUNTER_WIDTH:0] count; // COUNT VARIABLES
+reg [10:0] sq_x1_next = XY_ONE_START , sq_x2_next = XY_TWO_START ,sq_y1_next = XY_ONE_START , sq_y2_next = XY_TWO_START ,  sq_x1_reg, sq_x2_reg, sq_y1_reg, sq_y2_reg; // X Y COORDS OF SQUARE
 
 // Try a sprite, maybe a 2d array: https://docs.amd.com/r/en-US/ug901-vivado-synthesis/Multi-Dimensional-Array-Example-Two
-reg [3:0] sprite1 [0:3][0:3];
 
-initial begin
-    // Set a background colour, if nothing else is being printed on a pixel, this will be printed
-    background = 4'b0110;
-    
+
+// Counter
+//
+always@(posedge clk, posedge rst) begin
+    if(rst == 1'b1)
+        count <= COUNT_FROM;
+    else
+    begin
+        if(count == COUNT_TO)
+            count <= 0;
+        else
+            count <= count + 1;
+    end
 end
+
+// Colour decider, checks whether current x,y is where square is
+// Combinational Logic
 always@* begin
-    if(row >= 11'd5 && row <= 11'd15 && col >= 11'd5 && col<=11'd15 ) begin
-    red_next <= 4'b0000;
-    green_next <= 4'b0000;
-    blue_next <= 4'b0000;
+    if( count == COUNT_TO ) begin
+        sq_x1_next = sq_x1_reg + 1;
+        sq_x2_next = sq_x2_reg + 1;
+        sq_y1_next = sq_y1_reg + 1;
+        sq_y2_next = sq_y2_reg + 1;
+    end
+    
+    if( sq_x1_next > HDISP  ) begin
+        sq_x1_next = XY_ONE_START;
+        sq_x2_next =  XY_TWO_START;
+        sq_y1_next = XY_ONE_START;
+        sq_y2_next =  XY_TWO_START;
+    end
+
+    if( row >= sq_y1_reg && row <= sq_y2_reg && col >= sq_x1_reg && col<=sq_x2_reg ) begin
+        red_next <= 4'b0000;
+        green_next <= 4'b0000;
+        blue_next <= 4'b0000;
     end
     else begin
-        red_next <= background;
-        green_next <= background;
-        blue_next <= background;
+        red_next <= 4'b0110;
+        green_next <= 4'b0110;
+        blue_next <= 4'b0110;
     end
 end
 
+// Sequential Logic
 // Register RGB values
-// This saves values if reset isn't active
 always@(posedge clk, posedge rst) begin
     if(rst == 1'b1) begin
         red_reg <= 4'b0000;
@@ -54,6 +83,21 @@ always@(posedge clk, posedge rst) begin
         red_reg <= red_next;
         green_reg <= green_next;
         blue_reg <= blue_next;
+    end
+end
+//Register square positions
+always@(posedge clk, posedge rst) begin
+    if(rst == 1'b1) begin
+        sq_x1_reg <= XY_ONE_START;
+        sq_x2_reg <= XY_TWO_START;
+        sq_y1_reg <= XY_ONE_START;
+        sq_y2_reg <= XY_TWO_START;
+    end
+    else begin
+        sq_x1_reg <= sq_x1_next;
+        sq_x2_reg <= sq_x2_next;
+        sq_y1_reg <= sq_y1_next;
+        sq_y2_reg <= sq_y2_next;
     end
 end
 

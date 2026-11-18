@@ -1,60 +1,10 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="PaulDaly-STUDENT" Host="S-1B4L644" Pid="34508" HostCore="28" HostMemory="034031325184">
+    <Process Command="vivado.bat" Owner="PaulDaly-STUDENT" Host="S-1B4L644" Pid="20252" HostCore="28" HostMemory="034031325184">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="PaulDaly-STUDENT" Host="S-1B4L644" Pid="13100" HostCore="28" HostMemory="034031325184">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="PaulDaly-STUDENT" Host="S-1B4L644" Pid="35120" HostCore="28" HostMemory="034031325184">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="PaulDaly-STUDENT" Host="S-1B4L644" Pid="15824" HostCore="28" HostMemory="034031325184">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="PaulDaly-STUDENT" Host="S-1B4L644" Pid="36916" HostCore="28" HostMemory="034031325184">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="PaulDaly-STUDENT" Host="S-1B4L644" Pid="15608" HostCore="28" HostMemory="034031325184">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="PaulDaly-STUDENT" Host="S-1B4L644" Pid="37824" HostCore="28" HostMemory="034031325184">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="PaulDaly-STUDENT" Host="S-1B4L644" Pid="37236" HostCore="28" HostMemory="034031325184">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="PaulDaly-STUDENT" Host="S-1B4L644" Pid="30588" HostCore="28" HostMemory="034031325184">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="PaulDaly-STUDENT" Host="S-1B4L644" Pid="38428" HostCore="28" HostMemory="034031325184">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="PaulDaly-STUDENT" Host="S-1B4L644" Pid="35008" HostCore="28" HostMemory="034031325184">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="PaulDaly-STUDENT" Host="S-1B4L644" Pid="39068" HostCore="28" HostMemory="034031325184">
+    <Process Command="vivado.bat" Owner="PaulDaly-STUDENT" Host="S-1B4L644" Pid="47404" HostCore="28" HostMemory="034031325184">
     </Process>
 </ProcessHandle>

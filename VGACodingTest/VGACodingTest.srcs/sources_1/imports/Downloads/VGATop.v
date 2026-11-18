@@ -22,8 +22,8 @@ VGASync u_vga_sync (
     .hsync(hSync), .vsync(vSync), .vid_on(vid_on),
     .row(row), .col(col));
     
-VGASimpleTest u_simple_test (
-    .clk(clk), .rst(rst), .row(row), .col(col), .red(red), .green(green), .blue(blue));
+//VGASimpleTest u_simple_test (.clk(clk), .rst(rst), .row(row), .col(col), .red(red), .green(green), .blue(blue));
+VGACircleTest u_circle_test (.clk(clk), .rst(rst), .row(row), .col(col), .red(red), .green(green), .blue(blue));
    
 assign vgaRed = (vid_on) ? red : 4'b0;
 assign vgaGreen = (vid_on) ? green : 4'b0;

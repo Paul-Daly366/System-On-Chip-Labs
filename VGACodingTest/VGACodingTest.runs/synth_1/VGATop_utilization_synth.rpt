@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-| Date         : Wed Oct 21 16:41:52 2026
+| Date         : Wed Nov 18 16:18:23 2026
 | Host         : S-1B4L644 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file VGATop_utilization_synth.rpt -pb VGATop_utilization_synth.pb
 | Design       : VGATop
@@ -31,8 +31,8 @@ Table of Contents
 +-------------------------+------+-------+------------+-----------+-------+
 |        Site Type        | Used | Fixed | Prohibited | Available | Util% |
 +-------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*             |   26 |     0 |          0 |     20800 |  0.13 |
-|   LUT as Logic          |   26 |     0 |          0 |     20800 |  0.13 |
+| Slice LUTs*             |   42 |     0 |          0 |     20800 |  0.20 |
+|   LUT as Logic          |   42 |     0 |          0 |     20800 |  0.20 |
 |   LUT as Memory         |    0 |     0 |          0 |      9600 |  0.00 |
 | Slice Registers         |   24 |     0 |          0 |     41600 |  0.06 |
 |   Register as Flip Flop |   24 |     0 |          0 |     41600 |  0.06 |
@@ -80,11 +80,12 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 3. DSP
 ------
 
-+-----------+------+-------+------------+-----------+-------+
-| Site Type | Used | Fixed | Prohibited | Available | Util% |
-+-----------+------+-------+------------+-----------+-------+
-| DSPs      |    0 |     0 |          0 |        90 |  0.00 |
-+-----------+------+-------+------------+-----------+-------+
++----------------+------+-------+------------+-----------+-------+
+|    Site Type   | Used | Fixed | Prohibited | Available | Util% |
++----------------+------+-------+------------+-----------+-------+
+| DSPs           |    2 |     0 |          0 |        90 |  2.22 |
+|   DSP48E1 only |    2 |       |            |           |       |
++----------------+------+-------+------------+-----------+-------+
 
 
 4. IO and GT Specific
@@ -154,13 +155,14 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +----------+------+---------------------+
 | FDRE     |   23 |        Flop & Latch |
 | OBUF     |   14 |                  IO |
-| LUT6     |   10 |                 LUT |
-| LUT5     |   10 |                 LUT |
-| LUT4     |    6 |                 LUT |
-| LUT3     |    6 |                 LUT |
-| LUT2     |    3 |                 LUT |
-| LUT1     |    2 |                 LUT |
+| LUT5     |   13 |                 LUT |
+| LUT6     |   12 |                 LUT |
+| LUT4     |   10 |                 LUT |
+| LUT3     |    7 |                 LUT |
+| LUT2     |    5 |                 LUT |
+| LUT1     |    3 |                 LUT |
 | IBUF     |    2 |                  IO |
+| DSP48E1  |    2 |    Block Arithmetic |
 | FDCE     |    1 |        Flop & Latch |
 +----------+------+---------------------+
 

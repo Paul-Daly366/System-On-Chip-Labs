@@ -12,7 +12,8 @@ module VGASync
   parameter HPW = 96,
   parameter VPW = 2,
   parameter HLIM = 800,
-  parameter VLIM = 525)
+  parameter VLIM = 525
+   )
   (input wire clk25, rst,
    output reg hsync, vsync, vid_on,
    output wire [10:0] row, col);

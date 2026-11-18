@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-| Date         : Wed Oct 21 16:43:10 2026
+| Date         : Wed Nov 18 16:19:53 2026
 | Host         : S-1B4L644 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file VGATop_methodology_drc_routed.rpt -pb VGATop_methodology_drc_routed.pb -rpx VGATop_methodology_drc_routed.rpx
 | Design       : VGATop
@@ -23,7 +23,7 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max checks: <unlimited>
-             Checks found: 18
+             Checks found: 19
 +-----------+------------------+------------------------------------------------------------------+--------+
 | Rule      | Severity         | Description                                                      | Checks |
 +-----------+------------------+------------------------------------------------------------------+--------+
@@ -32,6 +32,7 @@ Table of Contents
 | TIMING-7  | Critical Warning | No common node between related clocks                            | 1      |
 | TIMING-27 | Critical Warning | Invalid primary clock on hierarchical pin                        | 1      |
 | CKLD-2    | Warning          | Clock Net has IO Driver, not a Clock Buf, and/or non-Clock loads | 1      |
+| TIMING-16 | Warning          | Large setup violation                                            | 1      |
 | TIMING-18 | Warning          | Missing input or output delay                                    | 13     |
 +-----------+------------------+------------------------------------------------------------------+--------+
 
@@ -59,7 +60,12 @@ Related violations: <none>
 
 CKLD-2#1 Warning
 Clock Net has IO Driver, not a Clock Buf, and/or non-Clock loads  
-Clock net clk_IBUF is directly driven by an IO rather than a Clock Buffer or may be an IO driving a mix of Clock Buffer and non-Clock loads. This connectivity should be reviewed and corrected as appropriate. Driver(s): clk_IBUF_inst/O, u_clock/clk_in1, u_simple_test/clk
+Clock net clk_IBUF is directly driven by an IO rather than a Clock Buffer or may be an IO driving a mix of Clock Buffer and non-Clock loads. This connectivity should be reviewed and corrected as appropriate. Driver(s): clk_IBUF_inst/O, u_circle_test/clk, u_clock/clk_in1
+Related violations: <none>
+
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -3.718 ns between u_vga_sync/hcount_reg[9]/C (clocked by clk_out1_clk_wiz_0) and u_circle_test/red_reg_reg[3]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-18#1 Warning

@@ -1,98 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1792592027">
-  <File Type="ROUTE-BLACKBOX-DCP" Name="VGATop_routed_bb.dcp"/>
-  <File Type="OPT-UTIL" Name="VGATop_utilization_opted.rpt"/>
-  <File Type="ROUTE-PWR" Name="VGATop_power_routed.rpt"/>
-  <File Type="PA-TCL" Name="VGATop.tcl"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="VGATop_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="VGATop_timing_summary_init.rpt"/>
-  <File Type="ROUTE-PWR-SUM" Name="VGATop_power_summary_routed.pb"/>
-  <File Type="OPT-RQA-PB" Name="VGATop_rqa_opted.pb"/>
   <File Type="REPORTS-TCL" Name="VGATop_reports.tcl"/>
-  <File Type="ROUTE-TIMING-PB" Name="VGATop_timing_summary_routed.pb"/>
-  <File Type="OPT-UTIL-PB" Name="VGATop_utilization_opted.pb"/>
-  <File Type="OPT-DCP" Name="VGATop_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="VGATop_power_summary_routed.pb"/>
+  <File Type="BITSTR-MMI" Name="VGATop.mmi"/>
   <File Type="OPT-DRC" Name="VGATop_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="VGATop.hwdef"/>
-  <File Type="OPT-TIMING" Name="VGATop_timing_summary_opted.rpt"/>
-  <File Type="PWROPT-DCP" Name="VGATop_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="VGATop_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="VGATop_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="VGATop_placed.dcp"/>
-  <File Type="PLACE-IO" Name="VGATop_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="VGATop_clock_utilization_placed.rpt"/>
+  <File Type="BG-DRC" Name="VGATop.drc"/>
+  <File Type="ROUTE-STATUS-PB" Name="VGATop_route_status.pb"/>
+  <File Type="BG-BGN" Name="VGATop.bgn"/>
   <File Type="PLACE-UTIL" Name="VGATop_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="VGATop_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="VGATop_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="VGATop_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="VGATop_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-IO" Name="VGATop_io_placed.rpt"/>
   <File Type="BG-BIN" Name="VGATop.bin"/>
-  <File Type="PLACE-TIMING" Name="VGATop_timing_summary_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="VGATop_control_sets_placed.rpt"/>
   <File Type="ROUTE-PWR-RPX" Name="VGATop_power_routed.rpx"/>
-  <File Type="PLACE-RQA-PB" Name="VGATop_rqa_placed.pb"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="VGATop_postplace_pwropt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="VGATop_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="VGATop_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="VGATop_drc_physopted.rpt"/>
-  <File Type="PHYSOPT-TIMING" Name="VGATop_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-UTIL" Name="VGATop_utilization_routed.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="VGATop_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="VGATop_routed.dcp"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="VGATop_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-UTIL-PB" Name="VGATop_utilization_routed.pb"/>
-  <File Type="ROUTE-DRC" Name="VGATop_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="VGATop_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="VGATop_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="VGATop_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="VGATop_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="VGATop_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-RQS-PB" Name="VGATop_rqs_routed.pb"/>
-  <File Type="ROUTE-STATUS" Name="VGATop_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="VGATop_route_status.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="VGATop_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="VGATop_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="VGATop_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="VGATop_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="VGATop_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="VGATop_bus_skew_routed.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="VGATop_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="VGATop_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="VGATop_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="VGATop_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="VGATop_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="VGATop_bus_skew_postroute_physopted.rpt"/>
-  <File Type="BG-BIT" Name="VGATop.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="VGATop_bus_skew_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="VGATop_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-MSK" Name="VGATop.msk"/>
   <File Type="BITSTR-RBT" Name="VGATop.rbt"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="VGATop_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="VGATop_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="VGATop_route_status.rpt"/>
+  <File Type="PA-TCL" Name="VGATop.tcl"/>
+  <File Type="ROUTE-PWR" Name="VGATop_power_routed.rpt"/>
+  <File Type="ROUTE-DRC" Name="VGATop_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="VGATop_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="VGATop_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="VGATop.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="VGATop_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="VGATop_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="VGATop.ltx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="VGATop_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-SIMILARITY" Name="VGATop_incremental_reuse_routed.rpt"/>
+  <File Type="RDI-RDI" Name="VGATop.vdi"/>
+  <File Type="ROUTE-CLK" Name="VGATop_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="VGATop_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="VGATop_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="VGATop_bus_skew_routed.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="VGATop_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="VGATop_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="VGATop_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="VGATop_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="VGATop_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="VGATop.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="VGATop_bus_skew_postroute_physopted.pb"/>
   <File Type="BITSTR-NKY" Name="VGATop.nky"/>
   <File Type="BITSTR-BMM" Name="VGATop_bd.bmm"/>
-  <File Type="BITSTR-MMI" Name="VGATop.mmi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-HWDEF" Name="VGATop.hwdef"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="VGATop_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DCP" Name="VGATop_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="VGATop_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="VGATop_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMING-PB" Name="VGATop_timing_summary_routed.pb"/>
+  <File Type="OPT-DCP" Name="VGATop_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="VGATop_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="VGATop_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="VGATop_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="VGATop_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="VGATop_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="VGATop_postroute_physopt_bb.dcp"/>
   <File Type="PDI-FILE" Name="VGATop.pdi"/>
   <File Type="BOOT-PDI-FILE" Name="VGATop_boot.pdi"/>
   <File Type="PL-PDI-FILE" Name="VGATop_pld.pdi"/>
   <File Type="RCFI_FILE" Name="VGATop.rcfi"/>
   <File Type="CFI_FILE" Name="VGATop.cfi"/>
   <File Type="RNPI_FILE" Name="VGATop.rnpi"/>
-  <File Type="RCDO-FILE" Name="VGATop.rcdo"/>
-  <File Type="MARKER-RNPI-FILE" Name="VGATop_markers.rnpi"/>
-  <File Type="MARKER-RCDO-FILE" Name="VGATop_markers.rcdo"/>
-  <File Type="BOOT_RNPI_FILE" Name="VGATop_boot.rnpi"/>
-  <File Type="BOOT_MARKER_RNPI_FILE" Name="VGATop_boot_markers.rnpi"/>
-  <File Type="PL_RNPI_FILE" Name="VGATop_pld.rnpi"/>
-  <File Type="PL_MARKER_RNPI_FILE" Name="VGATop_pld_markers.rnpi"/>
-  <File Type="PL_MASK_RNPI_FILE" Name="VGATop_pld_mask.rnpi"/>
-  <File Type="PL_SHUTDOWN_RNPI_FILE" Name="VGATop_pld_shutdown.rnpi"/>
-  <File Type="PL_UNMASK_RNPI_FILE" Name="VGATop_pld_unmask.rnpi"/>
-  <File Type="PL-RCDO-FILE" Name="VGATop_pld.rcdo"/>
-  <File Type="PL-CLEAR-RCDO-FILE" Name="VGATop_pld_clear.rcdo"/>
-  <File Type="PL_MARKER_RCDO_FILE" Name="VGATop_pld_markers.rcdo"/>
-  <File Type="PL_MASK_RCDO_FILE" Name="VGATop_pld_mask.rcdo"/>
-  <File Type="PL_UNMASK_MARKER_RCDO_FILE" Name="VGATop_pld_unmask_markers.rcdo"/>
-  <File Type="PL_UNMASK_RCDO_FILE" Name="VGATop_pld_unmask.rcdo"/>
   <File Type="NPI_FILE" Name="VGATop.npi"/>
   <File Type="RBD_FILE" Name="VGATop.rbd"/>
+  <File Type="ROUTE-RQS" Name="VGATop_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="VGATop_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
   <File Type="MMI-FILE" Name="VGATop.mmi"/>
   <File Type="BIF-FILE" Name="VGATop.bif"/>
   <File Type="BOOT-BIF-FILE" Name="VGATop_boot.bif"/>
@@ -100,17 +77,22 @@
   <File Type="LTX-FILE" Name="VGATop.ltx"/>
   <File Type="BOOT-LTX-FILE" Name="VGATop_boot.ltx"/>
   <File Type="PL-LTX-FILE" Name="VGATop_pld.ltx"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="VGATop.ltx"/>
-  <File Type="BITSTR-SYSDEF" Name="VGATop.sysdef"/>
-  <File Type="BG-BGN" Name="VGATop.bgn"/>
-  <File Type="BG-DRC" Name="VGATop.drc"/>
-  <File Type="RDI-RDI" Name="VGATop.vdi"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="ROUTE-RQS" Name="VGATop_routed.rqs"/>
-  <File Type="POSTROUTE-PHYSOPT-RQS" Name="VGATop_postroute_physopted.rqs"/>
-  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <File Type="RCDO-FILE" Name="VGATop.rcdo"/>
+  <File Type="MARKER-RCDO-FILE" Name="VGATop_markers.rcdo"/>
+  <File Type="PL-RCDO-FILE" Name="VGATop_pld.rcdo"/>
+  <File Type="MARKER-RNPI-FILE" Name="VGATop_markers.rnpi"/>
+  <File Type="BOOT_RNPI_FILE" Name="VGATop_boot.rnpi"/>
+  <File Type="PL_RNPI_FILE" Name="VGATop_pld.rnpi"/>
+  <File Type="BOOT_MARKER_RNPI_FILE" Name="VGATop_boot_markers.rnpi"/>
+  <File Type="PL_MARKER_RNPI_FILE" Name="VGATop_pld_markers.rnpi"/>
+  <File Type="PL_MASK_RNPI_FILE" Name="VGATop_pld_mask.rnpi"/>
+  <File Type="PL_SHUTDOWN_RNPI_FILE" Name="VGATop_pld_shutdown.rnpi"/>
+  <File Type="PL_UNMASK_RNPI_FILE" Name="VGATop_pld_unmask.rnpi"/>
+  <File Type="PL-CLEAR-RCDO-FILE" Name="VGATop_pld_clear.rcdo"/>
+  <File Type="PL_MARKER_RCDO_FILE" Name="VGATop_pld_markers.rcdo"/>
+  <File Type="PL_MASK_RCDO_FILE" Name="VGATop_pld_mask.rcdo"/>
+  <File Type="PL_UNMASK_MARKER_RCDO_FILE" Name="VGATop_pld_unmask_markers.rcdo"/>
+  <File Type="PL_UNMASK_RCDO_FILE" Name="VGATop_pld_unmask.rcdo"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/Downloads/VGAColourCycle.v">
@@ -167,9 +149,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
@@ -179,6 +159,7 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
 </GenRun>

@@ -56,14 +56,7 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param tcl.statsThreshold 360
-set_param chipscope.maxJobs 7
 set_param general.usePosixSpawnForFork 1
-set_param synth.incrementalSynthesisCache C:/Xilinx/2025.1/Vivado/bin/.Xil/Vivado-20992-S-1B4L644/incrSyn
-set_param checkpoint.writeSynthRtdsInDcp 1
-set_param xicom.use_bs_reader 1
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
@@ -81,11 +74,11 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  {C:/ATU/VS files/PD/VGACodingTest/VGACodingTest.srcs/sources_1/new/VGASimpleTest.v}
+  {C:/ATU/VS files/PD/VGACodingTest/VGACodingTest.srcs/sources_1/new/VGACircleTest.v}
   {C:/ATU/VS files/PD/VGACodingTest/VGACodingTest.srcs/sources_1/imports/Downloads/VGASync.v}
   {C:/ATU/VS files/PD/VGACodingTest/VGACodingTest.srcs/sources_1/imports/Downloads/VGATop.v}
 }
-read_ip -quiet {{c:/ATU/VS files/PD/VGACodingTest/VGACodingTest.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}
+read_ip -quiet {{C:/ATU/VS files/PD/VGACodingTest/VGACodingTest.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}
 set_property used_in_implementation false [get_files -all {{c:/ATU/VS files/PD/VGACodingTest/VGACodingTest.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc}}]
 set_property used_in_implementation false [get_files -all {{c:/ATU/VS files/PD/VGACodingTest/VGACodingTest.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc}}]
 set_property used_in_implementation false [get_files -all {{c:/ATU/VS files/PD/VGACodingTest/VGACodingTest.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc}}]

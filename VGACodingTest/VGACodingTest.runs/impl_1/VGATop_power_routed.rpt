@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-| Date             : Wed Oct 21 16:43:10 2026
+| Date             : Wed Nov 18 16:19:54 2026
 | Host             : S-1B4L644 running 64-bit major release  (build 9200)
 | Command          : report_power -file VGATop_power_routed.rpt -pb VGATop_power_summary_routed.pb -rpx VGATop_power_routed.rpx
 | Design           : VGATop
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.189        |
+| Total On-Chip Power (W)  | 0.190        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.117        |
+| Dynamic (W)              | 0.118        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.1         |
@@ -53,15 +53,16 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        6 |       --- |             --- |
-| Slice Logic    |    <0.001 |       67 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       26 |     20800 |            0.13 |
+| Slice Logic    |    <0.001 |       82 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       37 |     20800 |            0.18 |
 |   Register     |    <0.001 |       24 |     41600 |            0.06 |
-|   Others       |     0.000 |        6 |       --- |             --- |
-| Signals        |    <0.001 |       41 |       --- |             --- |
+|   Others       |     0.000 |        8 |       --- |             --- |
+| Signals        |    <0.001 |      125 |       --- |             --- |
 | MMCM           |     0.116 |        1 |         5 |           20.00 |
+| DSPs           |    <0.001 |        2 |        90 |            2.22 |
 | I/O            |    <0.001 |       16 |       106 |           15.09 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.189 |          |           |                 |
+| Total          |     0.190 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,7 +72,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.011 |       0.001 |      0.010 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.012 |       0.002 |      0.010 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.077 |       0.064 |      0.013 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -143,7 +144,7 @@ Table of Contents
 +-----------+-----------+
 | Name      | Power (W) |
 +-----------+-----------+
-| VGATop    |     0.117 |
+| VGATop    |     0.118 |
 |   u_clock |     0.116 |
 |     inst  |     0.116 |
 +-----------+-----------+
