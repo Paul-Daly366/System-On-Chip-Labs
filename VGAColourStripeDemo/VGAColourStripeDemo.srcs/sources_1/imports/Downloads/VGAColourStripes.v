@@ -19,7 +19,7 @@ module ColourStripes #(
 reg [3:0] red_reg, green_reg, blue_reg, red_next, green_next, blue_next;
 
 // Next state & output logic state  machine 
-always@* begin
+/*always@* begin
    if(col >= 11'd0 && col <11'd80) begin
       red_next   <= 4'b0000;
       green_next <= 4'b0000;
@@ -65,6 +65,16 @@ always@* begin
       green_next <= 4'b1111;
       blue_next  <= 4'b1111;
    end
+end*/
+
+// TESTBENCH COMBI LOGIC
+always@* begin
+    if(row>1 && col>2) begin
+        blue_next <= 4'b1111;
+    end
+    else begin
+        blue_next <= 4'b0000;
+    end
 end
 
 // Register RGB outputs    

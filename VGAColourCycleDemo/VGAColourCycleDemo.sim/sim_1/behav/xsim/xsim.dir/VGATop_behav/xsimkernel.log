@@ -1,7 +1,7 @@
-Running: xsim.dir/VGATop_behav/xsimk.exe -simmode gui -wdb VGATop_behav.wdb -simrunnum 0 -socket 51546
+Running: xsim.dir/VGATop_behav/xsimk.exe -simmode gui -wdb VGATop_behav.wdb -simrunnum 0 -socket 53335
 Design successfully loaded
-Design Loading Memory Usage: 12320 KB (Peak: 12320 KB)
-Design Loading CPU Usage: 61 ms
+Design Loading Memory Usage: 13092 KB (Peak: 13092 KB)
+Design Loading CPU Usage: 0 ms
 Simulation completed
-Simulation Memory Usage: 13576 KB (Peak: 13576 KB)
-Simulation CPU Usage: 92 ms
+Simulation Memory Usage: 14404 KB (Peak: 14404 KB)
+Simulation CPU Usage: 31 ms
